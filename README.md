@@ -106,8 +106,6 @@ Use a GPIO toggle around the prioritized block. PWM is **blue**; ET pulse is **y
 
 ### Method 2 — Code Execution Profiling (CEP)
 
-### Method 2 — Code Execution Profiling (CEP)
-
 - **Repeat the BP build & deploy steps** on **F28069M**.  
 - In Simulink, enable **Code Execution Profiling** in *Hardware Implementation → Code profiling / Instrumentation*.
 
