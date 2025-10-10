@@ -106,23 +106,41 @@ Use a GPIO toggle around the prioritized block. PWM is **blue**; ET pulse is **y
 
 ### Method 2 — Code Execution Profiling (CEP)
 
-1) **Retrieve profiling data from the target**
+### Method 2 — Code Execution Profiling (CEP)
+
+- **Repeat the BP build & deploy steps** on **F28069M**.  
+- In Simulink, enable **Code Execution Profiling** in *Hardware Implementation → Code profiling / Instrumentation*.
+
+1) **Get profiling data from the target**
 ```matlab
 codertarget.profile.getData('S_MTET_PROP_MPPT_ALG_V1')
+```
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/d6e4c3d1-3695-48a7-92ef-14a8d4795e3c" alt="Get CEP data" width="50%"> 
+  <br><em>Figure 13. Retrieving CEP data with <code>codertarget.profile.getData(...)</code>.</em>
+</p>
 
+2) **Confirm data availability**
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/26c7fa11-a5eb-4f8c-9432-8ffc214d3bac" alt="CEP data availability message" width="55%"> 
+  <br><em>Figure 14. CEP data availability message.</em>
+</p>
 
-<p align="center"> <img src="https://github.com/user-attachments/assets/d6e4c3d1-3695-48a7-92ef-14a8d4795e3c" alt="Get CEP data" width="50%"> <br><em>Figure 13. Retrieving CEP data with <code>codertarget.profile.getData(...)</code>.</em> </p>
-
-Confirm data availability
-
-<p align="center"> <img src="https://github.com/user-attachments/assets/26c7fa11-a5eb-4f8c-9432-8ffc214d3bac" alt="CEP data availability message" width="55%"> <br><em>Figure 14. CEP data availability message.</em> </p>
-
-Open the CEP report
-
+3) **Open the CEP report**
+```matlab
 report(ans)
-<p align="center"> <img src="https://github.com/user-attachments/assets/f835e93f-6899-4af4-a6ca-ba5e81377102" alt="Open CEP report" width="65%"> <br><em>Figure 15. Opening the Code Execution Profiling report.</em> </p>
+```
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/f835e93f-6899-4af4-a6ca-ba5e81377102" alt="Open CEP report" width="65%">
+  <br><em>Figure 15. Opening the Code Execution Profiling report.</em>
+</p>
 
-Interpret the report
-The execution time (ET) is highlighted in red, and the time base in green. Multiply both values to obtain ET in seconds.
+4) **Interpret the report (ET)**  
+The **execution time (ET)** is shown in the **red** field; multiply it by the **time base** in the **green** field to obtain ET in seconds.
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/ce5046e9-e839-40ff-8a0b-b8280f45c16b" alt="CEP report — ET and time base" width="80%"> 
+  <br><em>Figure 16. CEP report — execution time (red) and time base (green).</em>
+</p>
 
-<p align="center"> <img src="https://github.com/user-attachments/assets/ce5046e9-e839-40ff-8a0b-b8280f45c16b" alt="CEP report — ET and time base" width="80%"> <br><em>Figure 16. CEP report — execution time (red) and time base (green).</em> </p> ```
+
+
