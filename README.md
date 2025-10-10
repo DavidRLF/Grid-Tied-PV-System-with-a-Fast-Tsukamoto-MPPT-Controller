@@ -25,7 +25,7 @@ Open **`TSUKAMOTO_FUZZY_MODEL_V1`** to inspect the membership functions, rule ba
 
 ## ET-only builds on **F28069M** (execution-time measurement)
 
-Use the following models to deploy **execution-time (ET)** builds on TI C2000 **F28069M**. These are intended **only** for ET measurement (GPIO toggle/oscilloscope or Code Execution Profiling), not for PIL:
+Use the following models to deploy **execution-time (ET)** builds on TI C2000 **F28069M**. These are intended **only** for ET measurement (GPIO toggle/oscilloscope or Code Execution Profiling):
 
 - **`S_MTET_Tsu_MPPT_CONT_V1`** — Tsukamoto fuzzy MPPT (ET on F28069M)  
 - **`S_MTET_Sf_MPPT_CONT_V1`** — State-feedback MPPT (ET on F28069M)  
