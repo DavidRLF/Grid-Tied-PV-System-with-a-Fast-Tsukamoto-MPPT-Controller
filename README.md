@@ -154,7 +154,7 @@ Run **`ErrorMPP_V2`** to evaluate the approximation error of the MPPT reference 
 This script generates error metrics and visualization surfaces used in the paper.
 
 <p align="center">
-  <img src="![Fig  7p](https://github.com/user-attachments/assets/5bb92220-1f85-44aa-8d66-2e65d81d5df1)" alt="ErrorMPP_V2 surface" width="80%">
+  <img src="https://github.com/user-attachments/assets/02c4b365-72d8-4ad8-ab80-21e54db10cb8" alt="ErrorMPP_V2 surface" width="80%">
   <br><em>Figure 17. Approximation error surface of the MPPT reference current as a function of irradiance and temperature.</em>
 </p>
 
