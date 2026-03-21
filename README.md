@@ -150,8 +150,10 @@ The **execution time (ET)** is shown in the **red** field; multiply it by the **
 ## MPPT reference current approximation error analysis
 
 Run **`ErrorMPP_V2`** to evaluate the approximation error of the MPPT reference current derived from Eq. (3) with respect to the full nonlinear PV model under different irradiance and temperature conditions.
-
 This script generates error metrics and visualization surfaces used in the paper.
+
+![Fig  7p](https://github.com/user-attachments/assets/4d3dffab-2425-48ed-90f9-78a7b4e767ce)
+
 
 
 
