@@ -1,0 +1,30 @@
+[System]
+Name='CoDif_Man_V2'
+Type='mamdani'
+Version=2.0
+NumInputs=1
+NumOutputs=1
+NumRules=2
+AndMethod='min'
+OrMethod='max'
+ImpMethod='min'
+AggMethod='max'
+DefuzzMethod='centroid'
+
+[Input1]
+Name='E'
+Range=[-7 7]
+NumMFs=2
+MF1='A1(N)':'zmf',[-5 5]
+MF2='A2(P)':'smf',[-5 5]
+
+[Output1]
+Name='dD'
+Range=[-0.015 0.015]
+NumMFs=2
+MF1='B2(N)':'trimf',[-0.045 -0.015 0.015]
+MF2='B1(N)':'trimf',[-0.015 0.015 0.045]
+
+[Rules]
+1, 1 (1) : 1
+2, 2 (1) : 1
