@@ -35,6 +35,8 @@ Use the following models to deploy **execution-time (ET)** builds on TI C2000 **
 - **`S_MTET_Ma_MPPT_CONT_V1`** — Mamdani fuzzy MPPT (ET on F28069M)
 - **`S_MTET_2RuleMa_MPPT_CONT_V1`** — Two-rule Mamdani benchmark (ET on F28069M)
 
+The two-rule Mamdani model is included exclusively as a computational benchmark to compare execution time with the proposed Tsukamoto controller, as described in the paper.
+
 <p align="center">
   <img src="https://github.com/user-attachments/assets/f99eb780-8102-45b7-8439-b75b833adead" alt="S_MTET_Tsu_MPPT_CONT_V1" width="65%">
   <br><em>Figure 4. ET model — Tsukamoto: <code>S_MTET_Tsu_MPPT_CONT_V1</code>.</em>
