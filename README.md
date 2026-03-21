@@ -155,7 +155,8 @@ This script generates error metrics and visualization surfaces used in the paper
 
 <p align="center">
   <img src="https://github.com/user-attachments/assets/02c4b365-72d8-4ad8-ab80-21e54db10cb8" alt="ErrorMPP_V2 surface" width="80%">
+  </p>
   <br><em>Figure 17. Approximation error surface of the MPPT reference current as a function of irradiance and temperature.</em>
-</p>
+
 
 
