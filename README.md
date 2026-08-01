@@ -116,7 +116,7 @@ Use a GPIO toggle around the prioritized block. PWM is **blue**; ET pulse is **y
 
 1) **Get profiling data from the target**
 ```matlab
-codertarget.profile.getData('S_MTET_PROP_MPPT_ALG_V1')
+codertarget.profile.getData('S_MTET_Tsu_MPPT_CONT_V1')
 ```
 <p align="center">
   <img src="https://github.com/user-attachments/assets/d6e4c3d1-3695-48a7-92ef-14a8d4795e3c" alt="Get CEP data" width="50%"> 
