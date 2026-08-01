@@ -1,6 +1,6 @@
 Run the script **`M_MPPT_CONTROLLERS_SIM_V1`** to initialize parameters and simulate the MPPT controller suite. Then open the PV system model **`S_MPPT_CONTROLLERS_SIM_V1`** to explore and run each controller configuration.
 
-For the two-rule Mamdani benchmark introduced in the paper, use **`M_MPPT_CONTROLLERS_SIM_V2`** together with the Simulink model **`M_MPPT_CONTROLLERS_SIM_V2`**, which implements the same control framework with a reduced-rule Mamdani inference stage.
+For the two-rule Mamdani benchmark introduced in the paper, use **`M_MPPT_CONTROLLERS_SIM_V2`** together with the Simulink model **`S_MPPT_CONTROLLERS_SIM_V2`**, which implements the same control framework with a reduced-rule Mamdani inference stage.
 
 <p align="center">
   <img src="https://github.com/user-attachments/assets/9cce0718-e05e-4d65-95aa-212855f45007" alt="M_MPPT_CONTROLLERS_SIM_V1" width="100%">
