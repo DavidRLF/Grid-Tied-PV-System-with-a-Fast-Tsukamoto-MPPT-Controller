@@ -160,23 +160,29 @@ This script generates error metrics and visualization surfaces used in the paper
 
 ---
 
+---
+
 ## Complementary dc-side experimental validation
 
-The following models reproduce the complementary dc-side experimental validation presented in the manuscript using the TI F28069M platform.
+The following files reproduce the complementary dc-side experimental validation presented in the manuscript using the TI F28069M platform and the laboratory-scale dc-side setup.
 
-First, run **`EXPER_PARAMETERS_V1`** to initialize the experimental parameters. Then open one of the controller implementation models:
+1. Run **`EXPER_PARAMETERS_V1`** to initialize the experimental parameters.
+
+2. Open and deploy the corresponding real-time controller model:
 
 - **`S_EXP_Tsu_MPPT_CONT_V1`** — Tsukamoto MPPT controller
 - **`S_EXP_Sf_MPPT_CONT_V1`** — State-feedback MPPT controller
 - **`S_EXP_Pi_MPPT_CONT_V1`** — Proportional-integral MPPT controller
 - **`S_EXP_Ma_MPPT_CONT_V1`** — Mamdani fuzzy MPPT controller
 
-The corresponding waveform-generation models are:
+These models implement the interrupt-driven real-time control architecture described in the manuscript and communicate with the host PC for experimental data acquisition.
+
+3. After completing the experimental run, execute the corresponding waveform-generation model to reproduce the experimental figures and performance metrics:
 
 - **`S_GRAF_EXP_Tsu_MPPT_CONT_V1`**
 - **`S_GRAF_EXP_Sf_MPPT_CONT_V1`**
 - **`S_GRAF_EXP_Pi_MPPT_CONT_V1`**
 - **`S_GRAF_EXP_Ma_MPPT_CONT_V1`**
 
-These models implement the laboratory-scale dc-side setup described in the manuscript and reproduce the experimental waveforms used for controller comparison under equivalent irradiance profiles.
+These models process the recorded experimental data and generate the waveforms used for controller comparison under equivalent irradiance profiles.
 
