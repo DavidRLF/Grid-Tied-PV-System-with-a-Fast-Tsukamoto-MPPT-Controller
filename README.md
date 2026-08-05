@@ -2,6 +2,8 @@ Run the script **`M_MPPT_CONTROLLERS_SIM_V1`** to initialize parameters and simu
 
 For the two-rule Mamdani benchmark introduced in the paper, use **`M_MPPT_CONTROLLERS_SIM_V2`** together with the Simulink model **`S_MPPT_CONTROLLERS_SIM_V2`**, which implements the same control framework with a reduced-rule Mamdani inference stage.
 
+For the measurement-noise evaluation presented in the revised manuscript, run **`M_MPPT_CONTROLLERS_SIM_V3`** together with **`S_MPPT_CONTROLLERS_SIM_V3`**. These files reproduce the controller evaluation under different measurement-noise levels by adding Gaussian noise to the irradiance and converter input current measurements while maintaining the same irradiance profiles used in the nominal simulations.
+
 <p align="center">
   <img src="https://github.com/user-attachments/assets/9cce0718-e05e-4d65-95aa-212855f45007" alt="M_MPPT_CONTROLLERS_SIM_V1" width="100%">
   <br><em>Figure 1. Simulation script: <code>M_MPPT_CONTROLLERS_SIM_V1</code>.</em>
@@ -13,6 +15,14 @@ For the two-rule Mamdani benchmark introduced in the paper, use **`M_MPPT_CONTRO
 </p>
 
 ---
+
+---
+
+## MPPT controller evaluation under measurement noise
+
+Run **`M_MPPT_CONTROLLERS_SIM_V3`** to initialize the measurement-noise evaluation and open **`S_MPPT_CONTROLLERS_SIM_V3`** to simulate all controller configurations under the noise conditions presented in the manuscript.
+
+The models implement the additional evaluation under measurement noise by adding Gaussian noise to the irradiance and converter input current measurements while preserving the irradiance profiles used in the nominal simulations.
 
 ## Fuzzy MPPT models
 
