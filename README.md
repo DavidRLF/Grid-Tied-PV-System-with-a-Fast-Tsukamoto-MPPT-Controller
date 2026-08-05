@@ -16,8 +16,6 @@ For the measurement-noise evaluation presented in the revised manuscript, run **
 
 ---
 
----
-
 ## MPPT controller evaluation under measurement noise
 
 Run **`M_MPPT_CONTROLLERS_SIM_V3`** to initialize the measurement-noise evaluation and open **`S_MPPT_CONTROLLERS_SIM_V3`** to simulate all controller configurations under the noise conditions presented in the manuscript.
