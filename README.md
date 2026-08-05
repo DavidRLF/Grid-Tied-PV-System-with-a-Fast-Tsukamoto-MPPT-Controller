@@ -170,8 +170,6 @@ This script generates error metrics and visualization surfaces used in the paper
 
 ---
 
----
-
 ## Complementary dc-side experimental validation
 
 The following files reproduce the complementary dc-side experimental validation presented in the manuscript using the TI F28069M platform and the laboratory-scale dc-side setup.
