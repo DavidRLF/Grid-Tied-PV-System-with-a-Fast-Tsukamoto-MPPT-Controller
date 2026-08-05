@@ -158,3 +158,25 @@ This script generates error metrics and visualization surfaces used in the paper
   <br><em>Figure 17. Approximation error surface of the MPPT reference current as a function of irradiance and temperature.</em>
 </p>
 
+---
+
+## Complementary dc-side experimental validation
+
+The following models reproduce the complementary dc-side experimental validation presented in the manuscript using the TI F28069M platform.
+
+First, run **`EXPER_PARAMETERS_V1`** to initialize the experimental parameters. Then open one of the controller implementation models:
+
+- **`S_EXP_Tsu_MPPT_CONT_V1`** — Tsukamoto MPPT controller
+- **`S_EXP_Sf_MPPT_CONT_V1`** — State-feedback MPPT controller
+- **`S_EXP_Pi_MPPT_CONT_V1`** — Proportional-integral MPPT controller
+- **`S_EXP_Ma_MPPT_CONT_V1`** — Mamdani fuzzy MPPT controller
+
+The corresponding waveform-generation models are:
+
+- **`S_GRAF_EXP_Tsu_MPPT_CONT_V1`**
+- **`S_GRAF_EXP_Sf_MPPT_CONT_V1`**
+- **`S_GRAF_EXP_Pi_MPPT_CONT_V1`**
+- **`S_GRAF_EXP_Ma_MPPT_CONT_V1`**
+
+These models implement the laboratory-scale dc-side setup described in the manuscript and reproduce the experimental waveforms used for controller comparison under equivalent irradiance profiles.
+
